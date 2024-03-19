@@ -181,7 +181,7 @@
 												<!-- Begin submenu (submenu master)
 												==================================== -->
 												<li class="tt-submenu-wrap tt-submenu-master">
-													<a href="contact.html">Support</a>
+													<a href="contact.html">Contact</a>
 													
 												</li>
 												<!-- End submenu (sub-master) -->
@@ -207,7 +207,7 @@
 
                     <div class="hero_top">
 
-						<img class="image-header" src="./assets/img/banner.png"/>
+						<img id="banner" class="image-header" src="./assets/img/banner.png"/>
                     </div>
 					<div class="hero-bottom">
 						<!-- Begin scrolling text
@@ -912,6 +912,37 @@
         <!-- ====================
 		///// Scripts below /////
 		===================== -->
+
+
+		<script>
+				// Array of image URLs
+				var imageSources = ["./assets/img/banner.png", "./assets/img/banner2.png", "./assets/img/banner3.png", "./assets/img/banner4.png"];
+		
+				// Index to track current image
+				var currentIndex = 0;
+				
+				// Function to change the image
+
+				function changeImage() {
+				// Set the image source to the next image in the array
+				document.getElementById('banner').src = imageSources[currentIndex];
+				
+				// Increment the index for the next image
+				currentIndex++;
+				
+					// Reset index to 0 if it exceeds the length of the array
+					if (currentIndex >= imageSources.length) {
+						currentIndex = 0;
+					}
+				}
+			
+			// Call the changeImage function every 3 seconds (adjust as needed)
+			setInterval(changeImage, 2000);
+
+
+		</script>
+
+
 
         <script>
             document.addEventListener("DOMContentLoaded", function() {
