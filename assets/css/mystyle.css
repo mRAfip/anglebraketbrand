@@ -52,15 +52,7 @@
 	
 }
 
-.image-header {
 
-	position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-
-}
 
 .tt-heading-title{
 
@@ -163,6 +155,16 @@ header {
 		margin-top: -1%;
 		
 
+	}
+
+	.image-header {
+
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		z-index: 1;
+	
 	}
 
 
@@ -617,6 +619,16 @@ header {
 
 	}
 
+
+	.image-header {
+
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		z-index: 1;
+	
+	}
 
 
 	.about_section{
@@ -1085,6 +1097,16 @@ header {
 
 
 
+	.image-header {
+
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		z-index: 1;
+	
+	}
+
 	
 	
 	
@@ -1486,10 +1508,13 @@ header {
 	height: auto;
 	position: relative;
 	width: 100%;
-	height: 75Vh !important;
+	height: 100Vh !important;
 	z-index: 0;
 	
 }
+
+
+
 
 	
 .hero_top{
@@ -1556,6 +1581,19 @@ header {
 	justify-content: center;
 	margin-top: -1%;
 	
+
+}
+
+
+.image-header {
+
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100% !important;
+    z-index: 1;
+	width: auto !important;
+	object-fit: cover !important;
 
 }
 
